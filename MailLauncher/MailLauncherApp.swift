@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct MailLauncherApp: App {
+    // MARK: - Body
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EmailComposeView()
         }
     }
 }

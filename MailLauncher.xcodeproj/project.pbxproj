@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		B5258A402C29C462006967E6 /* MailLauncherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5258A3F2C29C462006967E6 /* MailLauncherApp.swift */; };
-		B5258A422C29C462006967E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5258A412C29C462006967E6 /* ContentView.swift */; };
+		B5258A422C29C462006967E6 /* EmailComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5258A412C29C462006967E6 /* EmailComposeView.swift */; };
 		B5258A442C29C468006967E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5258A432C29C468006967E6 /* Assets.xcassets */; };
 		B5258A472C29C468006967E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5258A462C29C468006967E6 /* Preview Assets.xcassets */; };
+		B5258A4E2C29C595006967E6 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5258A4D2C29C595006967E6 /* MailView.swift */; };
+		B5258A502C2A9708006967E6 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5258A4F2C2A9708006967E6 /* DataManager.swift */; };
+		B5258A522C2AD03E006967E6 /* MailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5258A512C2AD03E006967E6 /* MailData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B5258A3C2C29C462006967E6 /* MailLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5258A3F2C29C462006967E6 /* MailLauncherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailLauncherApp.swift; sourceTree = "<group>"; };
-		B5258A412C29C462006967E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B5258A412C29C462006967E6 /* EmailComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailComposeView.swift; sourceTree = "<group>"; };
 		B5258A432C29C468006967E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5258A462C29C468006967E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B5258A4D2C29C595006967E6 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		B5258A4F2C2A9708006967E6 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		B5258A512C2AD03E006967E6 /* MailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +58,11 @@
 			isa = PBXGroup;
 			children = (
 				B5258A3F2C29C462006967E6 /* MailLauncherApp.swift */,
-				B5258A412C29C462006967E6 /* ContentView.swift */,
-				B5258A432C29C468006967E6 /* Assets.xcassets */,
+				B5258A532C2AD058006967E6 /* Views */,
+				B5258A542C2AD07D006967E6 /* Representables */,
+				B5258A552C2AD091006967E6 /* Services */,
+				B5258A572C2AD0B7006967E6 /* Models */,
+				B5258A562C2AD0A6006967E6 /* Resources */,
 				B5258A452C29C468006967E6 /* Preview Content */,
 			);
 			path = MailLauncher;
@@ -65,6 +74,46 @@
 				B5258A462C29C468006967E6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5258A532C2AD058006967E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5258A412C29C462006967E6 /* EmailComposeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5258A542C2AD07D006967E6 /* Representables */ = {
+			isa = PBXGroup;
+			children = (
+				B5258A4D2C29C595006967E6 /* MailView.swift */,
+			);
+			path = Representables;
+			sourceTree = "<group>";
+		};
+		B5258A552C2AD091006967E6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B5258A4F2C2A9708006967E6 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B5258A562C2AD0A6006967E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5258A432C29C468006967E6 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B5258A572C2AD0B7006967E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5258A512C2AD03E006967E6 /* MailData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5258A422C29C462006967E6 /* ContentView.swift in Sources */,
+				B5258A422C29C462006967E6 /* EmailComposeView.swift in Sources */,
+				B5258A522C2AD03E006967E6 /* MailData.swift in Sources */,
+				B5258A502C2A9708006967E6 /* DataManager.swift in Sources */,
+				B5258A4E2C29C595006967E6 /* MailView.swift in Sources */,
 				B5258A402C29C462006967E6 /* MailLauncherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +332,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +362,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
