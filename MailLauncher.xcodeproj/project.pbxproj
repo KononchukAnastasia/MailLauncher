@@ -14,6 +14,7 @@
 		B5258A4E2C29C595006967E6 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5258A4D2C29C595006967E6 /* MailView.swift */; };
 		B5258A502C2A9708006967E6 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5258A4F2C2A9708006967E6 /* DataManager.swift */; };
 		B5258A522C2AD03E006967E6 /* MailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5258A512C2AD03E006967E6 /* MailData.swift */; };
+		B5258A592C2DBD36006967E6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B5258A582C2DBD36006967E6 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		B5258A4D2C29C595006967E6 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
 		B5258A4F2C2A9708006967E6 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		B5258A512C2AD03E006967E6 /* MailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailData.swift; sourceTree = "<group>"; };
+		B5258A582C2DBD36006967E6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		B5258A332C29C462006967E6 = {
 			isa = PBXGroup;
 			children = (
+				B5258A582C2DBD36006967E6 /* README.md */,
 				B5258A3E2C29C462006967E6 /* MailLauncher */,
 				B5258A3D2C29C462006967E6 /* Products */,
 			);
@@ -174,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5258A592C2DBD36006967E6 /* README.md in Resources */,
 				B5258A472C29C468006967E6 /* Preview Assets.xcassets in Resources */,
 				B5258A442C29C468006967E6 /* Assets.xcassets in Resources */,
 			);
